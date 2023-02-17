@@ -17,13 +17,15 @@ int main(void)
 		if (c == 'e')
 		{
 			break;
-			c++;
 		}
-		else if (c == 'q')
+		continue;
+
+		if (c == 'q')
 		{
 			break;
-			c++;
 		}
+		continue;
+
 		putchar(c);
 		c++;
 	}
