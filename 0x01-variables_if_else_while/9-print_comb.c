@@ -13,13 +13,20 @@ int main(void)
 	n = 48;
 	while (n < 58)
 	{
+		if (n == 58)
+		{
 		putchar(n);
-
+		}
+		else
+		{
 		putchar(',');
 		putchar(' ');
-		++n;
+		}
 
-		putchar('\0');
+		++n;
 	}
+
+	putchar('\0');
+
 	return (0);
 }
