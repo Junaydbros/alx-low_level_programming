@@ -16,11 +16,10 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-	int c;
 
-	for (c = 65; c <= 70; c++)
+	for (n = 65; n <= 70; n++)
 	{
-		putchar(c);
+		putchar(n);
 	}
 
 	putchar('\n');
