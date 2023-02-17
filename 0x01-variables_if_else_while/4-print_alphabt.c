@@ -11,9 +11,16 @@ int main(void)
 {
 	char c;
 
-	for (c = 'a'; c <= 'd' || c <= 'p' || c <= 'z'; c++)
+	c = 'a';
+	while (c <= 'z')
 	{
+		if (c == 'e')
+			break;
+		else if (c == 'q')
+			break;
+		else
 		putchar(c);
+		c++;
 	}
 
 	putchar('\n');
