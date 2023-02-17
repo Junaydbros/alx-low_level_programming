@@ -11,22 +11,19 @@ int main(void)
 	int n;
 
 	n = 48;
-	while (n < 58)
+	while (n <= 57)
 	{
-		if (n == 57)
-		{
 		putchar(n);
-		}
-		else
-		{
+
 		putchar(',');
 		putchar(' ');
-		}
 
+		if (n == 57)
+		{
+			putchar(n);
+		}
 		n++;
 	}
-
-	putchar('\0');
 
 	return (0);
 }
