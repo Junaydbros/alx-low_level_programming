@@ -15,10 +15,15 @@ int main(void)
 	while (c <= 'z')
 	{
 		if (c == 'e')
+		{
 			break;
+			c++;
+		}
 		else if (c == 'q')
+		{
 			break;
-		else
+			c++;
+		}
 		putchar(c);
 		c++;
 	}
