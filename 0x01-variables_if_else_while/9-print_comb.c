@@ -15,15 +15,15 @@ int main(void)
 	{
 		putchar(n);
 
+		if (n != 57)
+		{
 		putchar(',');
 		putchar(' ');
-
-		if (n == 57)
-		{
-			putchar(n);
 		}
+
 		n++;
 	}
+	putchar('\0');
 
 	return (0);
 }
