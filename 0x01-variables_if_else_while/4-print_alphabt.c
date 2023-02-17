@@ -12,20 +12,8 @@ int main(void)
 	char c;
 
 	c = 'a';
-	while (c <= 'z')
+	while (c < 'e' && c < 'q' || c <= 'z')
 	{
-		if (c == 'e')
-		{
-			break;
-		}
-		continue;
-
-		if (c == 'q')
-		{
-			break;
-		}
-		continue;
-
 		putchar(c);
 		c++;
 	}
