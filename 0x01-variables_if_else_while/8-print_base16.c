@@ -16,9 +16,9 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-	char c;
+	int c;
 
-	for (c = 'A'; c <= 'F'; c++)
+	for (c = 65; c <= 70; c++)
 	{
 		putchar(c);
 	}
