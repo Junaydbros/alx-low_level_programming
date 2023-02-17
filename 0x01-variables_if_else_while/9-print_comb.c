@@ -14,9 +14,10 @@ int main(void)
 	while (n <= 57)
 	{
 		putchar(n);
+		n++;
+
 		putchar(',');
 		putchar(' ');
-		n++;
 	}
 
 	putchar('\n');
