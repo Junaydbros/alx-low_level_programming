@@ -13,7 +13,7 @@ int main(void)
 	n = 48;
 	while (n < 58)
 	{
-		if (n == 58)
+		if (n == 57)
 		{
 		putchar(n);
 		}
@@ -23,7 +23,7 @@ int main(void)
 		putchar(' ');
 		}
 
-		++n;
+		n++;
 	}
 
 	putchar('\0');
