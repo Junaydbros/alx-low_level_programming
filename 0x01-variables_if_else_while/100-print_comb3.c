@@ -23,11 +23,11 @@ int main(void)
 					if (m == 8 && n == 7)
 					{
 						continue;
+					}
 
 
 	putchar (',');
 	putchar (' ');
-					}
 		}
 	}
 	putchar ('\n');
