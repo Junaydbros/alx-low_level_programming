@@ -27,12 +27,12 @@ int main(void)
 				putchar((a % 10) + '0');
 				putchar((b % 10) + '0');
 				putchar((c % 10) + '0');
+
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-
-	putchar(',');
-	putchar(' ');
 
 	putchar('\n');
 
