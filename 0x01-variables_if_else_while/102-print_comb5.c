@@ -12,20 +12,24 @@ int main(void)
 {
 	int x, y;
 
-	for (x = 0; x <= 8; x++)
+	for (x = 0; x <= 99; x++)
 	{
-		for (y = x + 1; y <= 9; y++)
+		for (y = 0; y <= 99; y++)
 		{
+			if (x < y)
+			{
 			putchar((x % 10) + 48);
+			putchar((x / 10) + 48);
+			putchar(' ');
 			putchar((y % 10) + 48);
+			putchar((y / 10) + 48);
 
-				if (x == 8 && y == 9)
+				if (x != 98 || y != 99)
 				{
-					continue;
-				}
-
 				putchar(',');
 				putchar(' ');
+				}
+			}
 		}
 	}
 
