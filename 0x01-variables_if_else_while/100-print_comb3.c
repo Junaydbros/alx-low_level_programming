@@ -15,19 +15,19 @@ int main(void)
 	for (m = 0; m <= 8; m++)
 
 	{
-		for (n = 0; n <= 7; n++)
+		for (n = m + 1; n <= 9; n++)
 		{
-			putchar ((m % 10) + '0');
-			putchar ((n % 10) + '0');
+			putchar((m % 10) + '0');
+			putchar((n % 10) + '0');
 
-					if (m == 8 && n == 7)
+					if (m == 8 && n == 9)
 					{
 						continue;
 					}
 
 
-	putchar (',');
-	putchar (' ');
+					putchar (',');
+					putchar (' ');
 		}
 	}
 	putchar ('\n');
