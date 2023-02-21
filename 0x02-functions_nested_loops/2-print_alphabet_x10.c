@@ -17,9 +17,9 @@ void print_alphabet_x10(void)
 		_putchar(c);
 	}
 
-	int a;
+	char a;
 
-	a = 0;
+	a = a + '0';
 	while (a <= 10)
 	{
 		_putchar(c);
