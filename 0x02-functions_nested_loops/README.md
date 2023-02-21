@@ -1,0 +1,1 @@
+This directory contains all projects testing the knowledge and application of functions, Nested loops, function prototypes, variable scopes, header files, function declaration and definition in C programming.
