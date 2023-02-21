@@ -11,9 +11,8 @@ int main(void)
 {
 	_putchar('_');
 
-	char ch;
+	char ch = 'p';
 
-	ch = 'p';
 	_putchar(ch);
 
 	ch = 'u';
