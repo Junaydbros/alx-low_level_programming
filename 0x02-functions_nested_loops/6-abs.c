@@ -10,9 +10,10 @@
 
 int _abs(int a)
 {
-	a = a % 10;
-
-	_putchar(a);
-
-	return (0);
+	if (a = 0)
+	{
+		return (a);
+	}
+	else
+		return (-a);
 }
