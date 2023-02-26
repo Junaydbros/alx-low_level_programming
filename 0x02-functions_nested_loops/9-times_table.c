@@ -18,7 +18,6 @@ void times_table(void)
 			_putchar(' ');
 
 			c = a * b;
-		}
 
 			if (c <= 9)
 			{
@@ -32,5 +31,6 @@ void times_table(void)
 			}
 
 			_putchar('\n');
+		}
 	}
 }
