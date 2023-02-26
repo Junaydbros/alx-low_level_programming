@@ -6,12 +6,11 @@
  * @a: the first integer parameter
  * @b: the second integer parameter
  *
- * Return: void
+ * Return: the sum of the integer
  */
 
 int add(int a, int b)
 {
-	a + b;
 
-	return (0);
+	return (a + b);
 }
