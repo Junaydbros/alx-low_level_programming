@@ -16,10 +16,13 @@ void print_to_98(int n)
 
 	for (a = n; a <= 98; a++)
 	{
-		if (a < 98)
+		if (a > 98)
 		{
-		_putchar(',');
-		_putchar(' ');
+			for (a = n; a >= 98; a--)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 
 		else
