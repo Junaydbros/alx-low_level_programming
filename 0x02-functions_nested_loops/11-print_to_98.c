@@ -18,7 +18,7 @@ void print_to_98(int n)
 	{
 		_putchar(' ');
 
-		if (a <= 98)
+		if (a < 98)
 		{
 		_putchar(',');
 		_putchar(' ');
