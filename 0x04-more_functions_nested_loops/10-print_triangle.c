@@ -21,12 +21,13 @@ void print_triangle(int size)
 
 	for (x = 0; x < size; x++)
 	{
-		for (y = size; y < x; y++)
+		for (y = x; y > 0; y--)
 		{
 			_putchar(' ');
 		}
 
 		_putchar('#');
+
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
