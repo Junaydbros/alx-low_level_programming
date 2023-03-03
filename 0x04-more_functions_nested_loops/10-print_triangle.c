@@ -19,21 +19,25 @@ void print_triangle(int size)
 		_putchar('\n');
 	}
 
-	for (x = 1; x <= size; x++)
+	else
 	{
-		for (y = 1; y <= size; y++)
-		{
-			if ((x + y) <= size)
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar('#');
-			}
-		}
 
-		_putchar('\n');
+		for (x = 1; x <= size; x++)
+		{
+			for (y = 1; y <= size; y++)
+			{
+				if ((x + y) <= size)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('#');
+				}
+			}
+
+			_putchar('\n');
+		}
 	}
 
 	_putchar('\n');
