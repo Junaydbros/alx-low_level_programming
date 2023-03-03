@@ -12,7 +12,7 @@
 
 void print_triangle(int size)
 {
-	int x, y;
+	int x, y, z;
 
 	if (size <= 0)
 	{
@@ -21,11 +21,16 @@ void print_triangle(int size)
 
 	for (x = 0; x < size; x++)
 	{
-		_putchar(' ');
-
-		for (y = 0; y < x; y++)
+		for (y = 0; y < size; y++)
 		{
-			_putchar('#');
+			if ((x + y) <= size)
+			{
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar('#');
+			}
 		}
 
 		_putchar('\n');
