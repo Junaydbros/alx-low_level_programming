@@ -12,7 +12,7 @@
 
 void print_triangle(int size)
 {
-	int x, y, z;
+	int x, y;
 
 	if (size <= 0)
 	{
