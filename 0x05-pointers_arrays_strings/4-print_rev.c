@@ -12,7 +12,7 @@ void print_rev(char *s)
 {
 	int a = 0, b;
 
-	while (s[a] == '\0')
+	while (s[a] != '\0')
 	{
 		a++;
 		s++;
@@ -22,7 +22,7 @@ void print_rev(char *s)
 	while (b <= (a - 1))
 	{
 		_putchar(s[b]);
-		b++;
+		b--;
 	}
 
 	_putchar('\n');
