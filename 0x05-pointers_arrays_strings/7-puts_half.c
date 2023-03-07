@@ -20,15 +20,15 @@ void puts_half(char *str)
 		n++;
 	}
 
-		if (a + 1 % 2 != '0')
-		{
-			n = (a - 1) / 2;
-		}
+	if (a + 1 % 2 != '0')
+	{
+		n = (a - 1) / 2;
+	}
 
-		else
-		{
-			n = (a / 2);
-		}
+	else
+	{
+		n = (a / 2);
+	}
 
 	a = n;
 	while (str[a] != '\0')
