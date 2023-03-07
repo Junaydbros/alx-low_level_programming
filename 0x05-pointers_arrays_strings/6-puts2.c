@@ -11,12 +11,7 @@
 
 void puts2(char *str)
 {
-	int a = 0, b;
-
-	while (str[a] != '\0')
-	{
-		a++;
-	}
+	int b;
 
 	for (b = 0; str[b] != '\0'; b++)
 	{
