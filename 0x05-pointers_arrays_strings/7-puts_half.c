@@ -20,7 +20,7 @@ void puts_half(char *str)
 		n++;
 	}
 
-	if (a + 1 % 2 != '0')
+	if ((a + 1) % 2 != '0')
 	{
 		n = (a - 1) / 2;
 	}
