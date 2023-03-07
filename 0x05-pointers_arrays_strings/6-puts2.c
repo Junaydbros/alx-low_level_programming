@@ -11,7 +11,7 @@
 
 void puts2(char *str)
 {
-	int a = 0, b;
+	int a = 0;
 
 	while (str[a] != '\0')
 	{
