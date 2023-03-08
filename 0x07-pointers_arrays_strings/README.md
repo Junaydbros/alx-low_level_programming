@@ -1,0 +1,1 @@
+This directory contains all projects testing the knowledge, usage, and application of a pointer to a pointer, string manipulation, the concept of multidimensional arrays and two-dimensional arrays in C programming language
