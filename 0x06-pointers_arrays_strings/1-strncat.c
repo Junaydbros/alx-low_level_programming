@@ -25,12 +25,12 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	b = 0;
-	while (src[b] != '\0')
+	while (src[b] != '\0' && b < n)
 	{
 		b++;
 	}
 
-	for (m = 0; m == b && b < n; m++)
+	for (m = 0; m <= b && b < n; m++)
 	{
 		dest[a + m] = src[m];
 	}
