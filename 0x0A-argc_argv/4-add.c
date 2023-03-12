@@ -16,10 +16,11 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	if (argc <= 1)
+	if (argc < 1)
 	{
 		printf("0\n");
 	}
+
 	else if (**argv <= 0 && **argv >= 9)
 	{
 		printf("Error\n");
