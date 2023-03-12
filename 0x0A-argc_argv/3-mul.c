@@ -15,7 +15,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, prod;
+	int prod;
 
 	if (argc <= 2)
 	{
