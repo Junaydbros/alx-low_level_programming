@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	}
 
-	else if (**argv <= 0 || **argv >= 9)
+	else if (**argv <= 0 && **argv >= 9)
 	{
 		printf("Error\n");
 
