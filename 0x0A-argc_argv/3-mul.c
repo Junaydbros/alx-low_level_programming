@@ -17,13 +17,11 @@ int main(int argc, char *argv[])
 {
 	int i, prod;
 
-	if (argc >= 2)
+	if (argc > 2)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			printf("%s\n", argv[i]);
-			prod = atoi(argv[i]) * atoi(argv[i + 1]);
-		}
+		prod = atoi(argv[1]) * atoi(argv[2]);
+
+		printf("%d\n", prod);
 	}
 	else
 	{
