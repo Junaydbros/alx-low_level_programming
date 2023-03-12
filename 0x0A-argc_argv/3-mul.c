@@ -17,17 +17,17 @@ int main(int argc, char *argv[])
 {
 	int i, prod;
 
-	if (argc > 1)
-	{
-		prod = atoi(argv[1]) * atoi(argv[2]);
-
-		printf("%d\n", prod);
-	}
-	else
+	if (argc <= 2)
 	{
 		printf("Error\n");
 
 		return (1);
+	}
+	else
+	{
+		prod = atoi(argv[1]) * atoi(argv[2]);
+
+		printf("%d\n", prod);
 	}
 
 	return (0);
