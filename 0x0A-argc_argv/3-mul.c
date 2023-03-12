@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - a program that multiplies two numbers
@@ -12,7 +13,24 @@
  * Return: void
  */
 
-int main(int argc, char *argv[]);
+int main(int argc, char *argv[])
 {
+	int i, prod;
 
+	if (argc > 1)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			printf("%s\n", argv[i]);
+			prod = atoi(argv[i]) * atoi(argv[i + 1]);
+		}
+	}
+	else
+	{
+		printf("Error\n");
+
+		return (1);
+	}
+
+	return (0);
 }
