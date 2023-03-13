@@ -21,7 +21,7 @@
 char *_strdup(char *str)
 {
 	char *ptr, *dptr;
-	int count;
+	int m, count;
 
 	if (str == NULL)
 	{
@@ -35,8 +35,9 @@ char *_strdup(char *str)
 	{
 		count++;
 	}
+	m = *str;
 
-	ptr = (char *)malloc(sizeof(char) * count);	
+	ptr = (char *)malloc(sizeof(char) * m);
 	dptr = strdup(str);
 
 	if (dptr < ptr)
