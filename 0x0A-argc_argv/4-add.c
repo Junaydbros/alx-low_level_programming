@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!(**argv >= '0' && **argv <= '9'))
+		strtol(argv[i], &end, 10);
+		if (*end)
 		{
 			printf("Error\n");
 
