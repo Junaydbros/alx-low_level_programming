@@ -20,7 +20,7 @@
 
 char *_strdup(char *str)
 {
-	char *ptr, *dptr;
+	char *ptr;
 	int m, count;
 
 	if (str == NULL)
@@ -28,22 +28,23 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	/* ptr = (char *)malloc(sizeof(char)); */
+	ptr = (char *)malloc(sizeof(char));
 
 	count = 0;
 	while (*str != '\0')
 	{
 		count++;
 	}
+
 	m = *str;
+	/* ptr = (char *)malloc(sizeof(char) * m); */
 
-	ptr = (char *)malloc(sizeof(char) * m);
-	dptr = strdup(str);
+	ptr = strdup(str);
 
-	if (dptr < ptr)
+	if (ptr < str)
 	{
 		return (NULL);
 	}
 
-	return (dptr);
+	return (ptr);
 }
