@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) < 0 && atoi(argv[i]) > 9)
+		if (!(**argv < '0' && **argv > '9'))
 		{
 			printf("Error\n");
 
