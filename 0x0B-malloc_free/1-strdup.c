@@ -21,7 +21,7 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int count;
+	int m, count;
 
 	if (str == NULL)
 	{
@@ -39,11 +39,16 @@ char *_strdup(char *str)
 	/* m = *str; */
 	/* ptr = (char *)malloc(sizeof(char) * m); */
 
-	ptr = strdup(str);
+	/* ptr = strdup(str); */
 
 	if (ptr < str)
 	{
 		return (NULL);
+	}
+
+	for (m = 0; m < count; m++)
+	{
+		ptr = strdup(str);
 	}
 
 	return (ptr);
