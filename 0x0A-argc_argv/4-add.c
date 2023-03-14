@@ -14,7 +14,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, sum = 0, rmv;
 
 	if (argc < 2)
 	{
@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		strtol(argv[i], &end, 10);
-		if (*end)
+		strtol(argv[i], &rmv, 10);
+		if (*rmv)
 		{
 			printf("Error\n");
 
