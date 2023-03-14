@@ -20,36 +20,38 @@
 
 char *_strdup(char *str)
 {
-	char *ptr;
-	int m, count;
+	char *dup;
+	int m, len;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	ptr = (char *)malloc(sizeof(char));
+	/* dup = (char *)malloc(sizeof(char)); */
 
-	count = 0;
-	while (*str != '\0')
+	len = 0;
+	while (str[len] != '\0')
 	{
-		count++;
+		len++;
 	}
 
 	/* m = *str; */
-	/* ptr = (char *)malloc(sizeof(char) * m); */
+	dup = (char *)malloc((sizeof(char) * len) + 1);
 
 	/* ptr = strdup(str); */
 
-	if (ptr < str)
+	if (dup == NULL)
 	{
 		return (NULL);
 	}
 
-	for (m = 0; m < count; m++)
+	for (m = 0; m < len; m++)
 	{
-		ptr = strdup(str);
+		dup[m] = str[m];
+		dup[len] = '\0';
+
 	}
 
-	return (ptr);
+	return (dup);
 }
