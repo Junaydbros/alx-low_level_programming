@@ -21,7 +21,7 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int m, count;
+	int count;
 
 	if (str == NULL)
 	{
