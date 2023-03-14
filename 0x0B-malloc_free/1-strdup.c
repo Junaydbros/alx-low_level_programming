@@ -28,7 +28,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	ptr = (char *)malloc(sizeof(char) * m);
+	ptr = (char *)malloc(sizeof(char));
 
 	count = 0;
 	while (*str != '\0')
@@ -36,7 +36,7 @@ char *_strdup(char *str)
 		count++;
 	}
 
-	m = *str;
+	/* m = *str; */
 	/* ptr = (char *)malloc(sizeof(char) * m); */
 
 	ptr = strdup(str);
