@@ -14,7 +14,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, sum = 0;
+	int i, sum = 0;
 	char *rmv;
 
 	if (argc < 2)
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		j = strtol(argv[i], &rmv, 10);
+		strtol(argv[i], &rmv, 10);
 
 		if (*rmv)
 		{
@@ -32,10 +32,13 @@ int main(int argc, char *argv[])
 
 			return (1);
 		}
-		/* sum += atoi(argv[i]); */
-		sum += j;
+		else
+		{
+		sum += atoi(argv[i]);
+		/* sum += j; */
+		}
 
-		printf("%d\n", sum);
+	printf("%d\n", sum);
 	}
 
 	return (0);
