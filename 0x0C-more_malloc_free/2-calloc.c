@@ -25,17 +25,17 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	arr =(void *)malloc(size * nmemb);
+	arr = (void *)malloc(size * nmemb);
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
 
+	arr = 0;
 	for (a = 0; a < nmemb; a++)
 	{
 		continue;
 	}
-	arr = 0;
 
 	return (arr);
 }
