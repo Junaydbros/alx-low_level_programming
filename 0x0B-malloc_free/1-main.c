@@ -3,19 +3,24 @@
 #include "main.h"
 
 /**
- * main - check the code for the 1-string_nconcat.c project
+ * main - check the code for the 1-strdup.c project
  *
  * Return: Always 0
  */
 
 int main(void)
 {
-	char *concat;
+	char *s;
 
-	concat = string_nconcat("Best ", "School !!!", 6);
-	printf("%s\n", concat);
+	s = _strdup("ALX SE");
 
-	free(concat);
+	if (s == NULL)
+	{
+		printf("failed to allocate memory\n");
+		return (1);
+	}
+	printf("%s\n", s);
+	free(s);
 
 	return (0);
 }
