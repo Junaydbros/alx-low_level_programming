@@ -19,7 +19,7 @@ void print_dog(struct dog *d)
 	}
 	if (d == NULL)
 	{
-		d = '\0';
+		return;
 	}
 
 	/* d = malloc(sizeof(struct dog)); */
