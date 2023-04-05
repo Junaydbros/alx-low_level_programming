@@ -20,4 +20,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
+	a = 0;
+	while (a != '\0')
+	{
+		a++;
+	}
+	nlen = a[owner] + 1;
 
