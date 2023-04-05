@@ -44,8 +44,6 @@ void print_all(const char * const format, ...)
 
 				if (str == NULL)
 					printf("(nil)");
-				else
-					printf("%s", str);
 				break;
 			default:
 				s++;
