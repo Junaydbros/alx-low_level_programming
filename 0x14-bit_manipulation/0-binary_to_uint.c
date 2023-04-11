@@ -26,11 +26,8 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		else
-		{
-			uint = (uint << 1) +  (b[len] - '0');
-			len++;
-		}
+		uint = (uint << 1) +  (b[len] - '0');
+		len++;
 	}
 	return (uint);
 }
