@@ -8,12 +8,11 @@
  *
  * Return: void
  */
-                                                  void print_binary(unsigned long int n)            {
-	unsigned long int rep = 1ul << (sizeof(unsigned long int) * 8 - 1);
-	int a;
-
-	for (a = 0; rep > 0; a++)                         {
-                _putchar((n & rep) ? '1' : '0');
-                rep >>= 1;
-        }
+                                                  void print_binary(unsigned long int n)
+{
+	if (n > 1)
+	{
+		print_binary(n >> 1);
+	}
+	_putchar((n & 1) + '0');
 }
