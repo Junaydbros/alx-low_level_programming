@@ -15,12 +15,10 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	range = sizeof((unsigned long int) * 8);
 
-	if (!(index > range))
-	{
-		bit_value = ((n >> index) & 1);
-	}
-	else
+	if (index > range)
 	{
 		return (-1);
 	}
+
+	bit_value = ((n >> index) & 1);
 }
