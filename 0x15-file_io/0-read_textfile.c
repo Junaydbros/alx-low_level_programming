@@ -24,8 +24,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	h = fopen(filename, r);
-	if (h == -1)
+	h = fopen("filename", "r");
+	if (h == NULL)
 	{
 		return (0);
 	}
