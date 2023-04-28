@@ -13,7 +13,7 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int lmn = 1;
+	unsigned long int lmn = 1, new;
 	unsigned int cnt = 0, a;
 
 	new = (sizeof(unsigned long int) * 8);
@@ -22,7 +22,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if (lmn == ((n ^ m) & lmn))
 		{
-			count++;
+			cnt++;
 		}
 		lmn <<= 1;
 	}
