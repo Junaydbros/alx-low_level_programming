@@ -15,7 +15,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *h = NULL;
+	int h;
 	ssize_t Rcnt, Wcnt;
 	char *abs;
 
@@ -24,8 +24,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	h = fopen("filename", "r");
-	if (h == NULL)
+	h = open(filename, O_RDONLY);
+	if (h == -1)
 	{
 		return (0);
 	}
