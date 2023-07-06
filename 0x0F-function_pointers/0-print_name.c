@@ -3,10 +3,10 @@
 
 /**
  * print_name - a function that prints a name
- * @name: the name to be printed
- * @f: a pointer to the function that prints the name
+ * @name: the name to be printed by the function
+ * @f: the pointer to the function that prints a name
  *
- * Reurn: void
+ * Return: void
  */
 
 void print_name(char *name, void (*f)(char *))
