@@ -24,7 +24,7 @@ int _strlen(const char *str)
 unsigned int binary_to_uint(const char *b)
 {
 	int a, d;
-	char ib = *b;
+	/* char ib = *b; */
 	unsigned int result = 0;
 
 	if (b == NULL)
