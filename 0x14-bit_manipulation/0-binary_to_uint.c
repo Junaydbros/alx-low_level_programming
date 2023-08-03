@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * binary_to_uint - a function that converts a binary number to an unsigned int
- * @b: the binary number to be converted
+ * _strlen - a function that returns a string's length
+ * @str: a string literal
  *
- * Return: an unsigned int type
+ * Return: an integer type
  */
 
 int _strlen(const char *str)
@@ -20,6 +20,13 @@ int _strlen(const char *str)
 
 	return (cnt);
 }
+
+/**
+ * binary_to_uint - a function that converts a binary number to an unsigned int
+ * @b: the binary number to be converted
+ *
+ * Return: an unsigned integer type
+ */
 
 unsigned int binary_to_uint(const char *b)
 {
