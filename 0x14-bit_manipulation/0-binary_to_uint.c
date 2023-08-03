@@ -7,6 +7,20 @@
  * Return: an unsigned int type
  */
 
+int _strlen(const char *str)
+{
+	int cnt;
+
+	cnt = 0;
+	while (*str != '\0')
+	{
+		cnt++;
+		str++;
+	}
+
+	return (cnt);
+}
+
 unsigned int binary_to_uint(const char *b)
 {
 	int a, d;
@@ -18,15 +32,18 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 
-	while (*b != '\0')
+	d = _strlen(b);
+
+	for (a = d - 1; a >= 0; a--)
 	{
-		if (ib != '0' && ib != '1')
+		if (b[a] == '0' || b[a] == '1')
+		{
+			result = (result << 1) + (b[a] - '0');
+		}
+		else
 		{
 			return (0);
 		}
-
-		result = (result << 1) + (ib - '0');
-		*b++;
 	}
 
 	return (result);
